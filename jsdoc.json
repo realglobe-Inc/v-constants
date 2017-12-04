@@ -1,31 +1,45 @@
 {
     "namespaces": [
         {
-            "name": "Hostnames",
-            "description": "Host name configuration",
+            "name": "Defaults",
+            "description": "Default configuration",
             "access": "",
             "virtual": false
         },
         {
-            "name": "Hostnames",
-            "description": "Host name configuration",
+            "name": "Defaults",
+            "description": "Default configuration",
             "access": "",
             "virtual": false
         }
     ],
     "properties": [
         {
-            "name": "DEFAULT_HOSTNAME",
+            "name": "HOSTNAME",
             "access": "",
             "virtual": false,
             "description": "Default host name",
             "type": ""
         },
         {
-            "name": "DEFAULT_HOSTNAME",
+            "name": "PROTOCOL",
+            "access": "",
+            "virtual": false,
+            "description": "Default protocol",
+            "type": ""
+        },
+        {
+            "name": "HOSTNAME",
             "access": "",
             "virtual": false,
             "description": "Default host name",
+            "type": ""
+        },
+        {
+            "name": "PROTOCOL",
+            "access": "",
+            "virtual": false,
+            "description": "Default protocol",
             "type": ""
         }
     ]
