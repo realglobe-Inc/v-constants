@@ -1,0 +1,19 @@
+/**
+ * Bud file for index.js
+ */
+
+'use strict'
+
+const {dir} = require('the-templates')
+const {description, name} = require('../package.json')
+
+module.exports = dir({
+  name,
+  description,
+  dirname: __dirname,
+  cjs: true
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}
