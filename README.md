@@ -74,11 +74,11 @@ Usage
 ```javascript
 'use strict'
 
-const {Hostnames} = require('v-constants')
+const {Defaults} = require('v-constants')
 
 async function tryExample () {
-  const {DEFAULT_HOSTNAME} = Hostnames
-  console.log(DEFAULT_HOSTNAME)
+  const {HOSTNAME} = Defaults
+  console.log(HOSTNAME)
 }
 
 tryExample().catch((err) => console.error(err))
@@ -95,16 +95,17 @@ tryExample().catch((err) => console.error(err))
 Values
 ------
 
-+ [Hostnames](#Hostnames)
++ [Defaults](#Defaults)
 
 
-<a name="Hostnames" ></a>
+<a name="Defaults" ></a>
 
-### Hostnames
+### Defaults
 
 | Key | Value |
 | --- | ---- |
-| DEFAULT_HOSTNAME | `localhost` |
+| HOSTNAME | `localhost` |
+| PROTOCOL | `http` |
 
 
 
