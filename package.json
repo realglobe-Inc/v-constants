@@ -1,6 +1,6 @@
 {
   "name": "v-constants",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Constant variables for v",
   "main": "lib",
   "browser": "shim",

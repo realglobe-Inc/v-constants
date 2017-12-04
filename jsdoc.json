@@ -1,1 +1,32 @@
-{}
+{
+    "namespaces": [
+        {
+            "name": "Hostnames",
+            "description": "Host name configuration",
+            "access": "",
+            "virtual": false
+        },
+        {
+            "name": "Hostnames",
+            "description": "Host name configuration",
+            "access": "",
+            "virtual": false
+        }
+    ],
+    "properties": [
+        {
+            "name": "DEFAULT_HOSTNAME",
+            "access": "",
+            "virtual": false,
+            "description": "Default host name",
+            "type": ""
+        },
+        {
+            "name": "DEFAULT_HOSTNAME",
+            "access": "",
+            "virtual": false,
+            "description": "Default host name",
+            "type": ""
+        }
+    ]
+}
