@@ -95,6 +95,16 @@ tryExample().catch((err) => console.error(err))
 Values
 ------
 
++ [Hostnames](#Hostnames)
+
+
+<a name="Hostnames" ></a>
+
+### Hostnames
+
+| Key | Value |
+| --- | ---- |
+| DEFAULT_HOSTNAME | `localhost` |
 
 
 

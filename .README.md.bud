@@ -4,11 +4,10 @@
 
 'use strict'
 
-const {readmeMdBud} = require('ape-tmpl')
+const { readmeMdBud } = require('ape-tmpl')
 const pkg = require('./package.json')
-const {signature} = require('the-script-jsdoc')
-const jsdoc = require('./jsdoc.json')
 
+let lib = require('./lib')
 module.exports = readmeMdBud({
   pkg,
   repo: pkg.repository,
@@ -20,11 +19,15 @@ module.exports = readmeMdBud({
   },
   overview: 'doc/overview.md',
   links: require('./doc/links'),
-  vars: {}
+  vars: {
+    values: Object.keys(lib)
+      .reduce((values, name) => Object.assign(values, {
+        [name]: lib[ name ]
+      }), {})
+  }
 })
+
 
 if (!module.parent) {
   require('coz').render(__filename)
 }
-
-
