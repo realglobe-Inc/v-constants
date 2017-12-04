@@ -1,10 +1,10 @@
 'use strict'
 
-const {Hostnames} = require('v-constants')
+const {Defaults} = require('v-constants')
 
 async function tryExample () {
-  const {DEFAULT_HOSTNAME} = Hostnames
-  console.log(DEFAULT_HOSTNAME)
+  const {HOSTNAME} = Defaults
+  console.log(HOSTNAME)
 }
 
 tryExample().catch((err) => console.error(err))
